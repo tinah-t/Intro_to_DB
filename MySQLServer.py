@@ -13,7 +13,7 @@ try:
     if mydb.is_connected():
         print("Database 'alx_book_store' created successfully!")
 
-except Error:
+except mysql.connector.Error:
     print("Error connecting to the database")
 finally:
     mycursor.close()
